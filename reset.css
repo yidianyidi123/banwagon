@@ -1,0 +1,139 @@
+*{
+	outline: none!important;
+}
+body,html{
+	margin: 0; 
+	padding: 0;
+	font-size: 14px;
+	font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti, "Microsoft YaHei";
+	background: #F3F3F3;
+	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
+}
+h1,h2,h3{ 
+	font-weight: normal;
+	margin: 0;
+}
+ul, li { 
+	list-style: none;  
+	margin: 0; 
+	padding: 0;
+}
+img { 
+	border: none; 
+	border: 0; 
+	vertical-align: middle; 
+}
+a { 
+	text-decoration: none; 
+	outline: none; 
+	color: #333;
+	cursor: pointer;
+}
+a:link, a:hover, a:visited, a:active{
+	text-decoration: none;
+	color: #333;
+}
+p { 
+	margin: 0; 
+	padding: 0; 
+}
+label{
+	font-weight: normal;
+}
+
+button{
+	border: none;
+}
+video{
+	width: 100%;
+}
+input, select, textarea { 
+	vertical-align: middle;
+	*font-size:100%;
+}
+input { 
+	margin: 0; 
+	outline: none;
+	padding: 0; 
+}
+input::-ms-clear {display:none;}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.main{
+	width: 85%;
+	margin: 0 auto;
+}
+/*轮播图start*/
+.carousel-list{
+	transition: all .5s;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+}
+.carousel-list li{
+	position: relative;
+	float: left;
+	/*width: 25%;*/
+	text-align: center;
+	overflow: hidden;
+}
+.carousel-list li img{
+	width: 95%;
+	height: 100%;
+}
+.carousel-list li p{
+	position: absolute;
+	left: 2.5%;
+	bottom: -2rem;
+	width: 95%;
+	height: 2rem;
+  line-height: 2rem;
+  font-size: 15px;
+  color: #fff;
+  overflow: hidden;
+  z-index: 100;
+  background: rgba(0,0,0,.5);
+  transition: all .5s;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+}
+.carousel-list li:hover p{
+	bottom: 0;
+}
+.carousel-spot{
+	position: absolute;
+	left: 50%;
+	bottom: 20px;
+	width: 100%;
+	text-align: center;
+	font-size: 12px;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+}
+.carousel-spot li{
+	float: left;
+	width: 10px;
+	height: 10px;
+	margin: 5px;
+	background: #4E4E4E;
+	border-radius: 50%;
+}
+.carousel-spot li.active{
+	background: orange;
+}
+/*轮播图end*/
+@media only screen and (min-width: 768px) {
+	body,html{
+		font-size: 20px;
+	}
+}
+@media only screen and (min-width: 1200px) {
+	.main{
+		width: 1000px;
+	}
+}
